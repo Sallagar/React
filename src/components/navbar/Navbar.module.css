@@ -1,0 +1,20 @@
+.nav {
+    grid-area: n;
+    background-color: blueviolet;
+  }
+
+
+.NavLink {
+  color: aqua;
+  text-decoration: none;
+}
+
+.item {
+  size: 20px;
+  margin-bottom: 10px;
+}
+
+.quit{
+  margin-top: 700px;
+  margin-bottom: 30px;
+}

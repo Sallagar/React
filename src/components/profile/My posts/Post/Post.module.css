@@ -1,0 +1,16 @@
+.item img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.commet{
+    color: blueviolet;
+}
+
+.like{
+    color: blue;
+}
+
+.name{
+    color: red;
+}
