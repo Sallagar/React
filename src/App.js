@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Header from './components/header/Header';
+import HeaderContainer from './components/header/HeaderContainer';
 import DialogsContainer from './components/dialogs/DialogsContainer';
 import Music from './components/music/Music';
 import Settings from './components/set/Settings';
@@ -14,7 +14,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
-        <Header />
+        <HeaderContainer />
         <Navbar />
         <div className="app-content">
           <Routes>
