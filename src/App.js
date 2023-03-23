@@ -20,7 +20,7 @@ function App(props) {
           <Routes>
             <Route path="/news" element={<News />} />
             <Route
-              path="/profile/*"
+              path="/profile/:userId"
               element={
                 <ProfileContainer />
               }
