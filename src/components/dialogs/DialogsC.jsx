@@ -11,8 +11,6 @@ class Dialogs extends React.Component{
   }
 }
 
-
-
 const Dialogs = (props) => {
   const state = props.dialogsPage
 
@@ -34,7 +32,8 @@ const Dialogs = (props) => {
     const body = e.target.value
     props.updateNewMessageBody(body)
   }
-  render() {
+  render() 
+  {
     return <div>(
       <div className={dialogs.dialogs}>
         <div className={dialogs.users}>{dialogsElements}</div>
@@ -50,7 +49,8 @@ const Dialogs = (props) => {
         </div>
       </div>
       )
-    </div>}
+    </div>
+  }
 }
 
 export default Dialogs
