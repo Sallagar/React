@@ -44,6 +44,7 @@ const initialState = {
 const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
 
 export const addPostActionCreator = () => ({type: ADD_POST,})
+
 export const getUserProfile = (userId) => (dispatch) => {
   userAPI.getProfile(userId)
   .then(response => { 
