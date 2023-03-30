@@ -2,10 +2,12 @@ import React from "react"
 import Preloader from "../../../common/preloader/preloader";
 import profInf from './ProfileInfo.module.css'
 
+
 const ProfileInfo = (props) => {
   if (!props.profile) {
     return <Preloader />
-  }
+  } 
+  
 
   return (
     <div className={profInf.main}>

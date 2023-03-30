@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import News from './components/news/News';
 import UsersContainer from './components/users/UsersContainer';
 import ProfileContainer from './components/profile/ProfileContainer';
+import Login from './components/Login/Login';
 
 function App(props) {
   return (
@@ -19,26 +20,18 @@ function App(props) {
         <div className="app-content">
           <Routes>
             <Route path="/news" element={<News />} />
-            <Route
-              path="/profile/:userId"
-              element={
-                <ProfileContainer />
-              }
-            />
-            <Route
-              path="/dialogs/*"
-              element={
-                <DialogsContainer />
-              }
-            />
-            <Route
-              path="/users"
-              element={
-                <UsersContainer />
-              }
-            />
+
+            <Route path="/profile/:userId" element={<ProfileContainer />}/>
+            
+            <Route path="/dialogs/*" element={<DialogsContainer />}/>
+            
+            <Route path="/users" element={<UsersContainer />}/>
+            
             <Route path="/music" element={<Music />} />
+            
             <Route path="/settings" element={<Settings />} />
+            
+            <Route path="/login" element={<Login />}/> 
           </Routes>
         </div>
       </div>
