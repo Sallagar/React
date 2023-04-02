@@ -1,7 +1,7 @@
 import React from "react"
 import Preloader from "../../../common/preloader/preloader";
 import profInf from './ProfileInfo.module.css'
-
+import ProfileStatus from './ProfileStatus'
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -11,18 +11,12 @@ const ProfileInfo = (props) => {
 
   return (
     <div className={profInf.main}>
-      <div className={profInf.im}>
-      <img
-        src="https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg"
-        alt="img"
-      />
-      </div>
       <div className = {profInf.discription}>
         <img src={props.profile.photos.large}
         alt='img'
          />
         <div>{props.profile.fullName}</div>
-
+        <ProfileStatus status={'Hy'}/>
         <div>{props.profile.contacts.github}</div>
       </div>
     </div>
