@@ -9,7 +9,6 @@ const initialState = {
     login: null,
     isFetching: true,
     isAuth: false
-
 }
 
 const authReduser = (state = initialState, action) => {
