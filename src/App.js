@@ -10,6 +10,8 @@ import News from './components/news/News';
 import UsersContainer from './components/users/UsersContainer';
 import ProfileContainer from './components/profile/ProfileContainer';
 import Login from './components/Login/Login';
+import { connect } from 'react-redux';
+import { getAuthUserData } from './redux/auth-reduser';
 
 class App extends Component {
   
@@ -46,4 +48,4 @@ class App extends Component {
   } 
 }
 
-export default App;
+export default connect (null, {getAuthUserData}) (App)
