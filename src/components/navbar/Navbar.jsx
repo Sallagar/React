@@ -6,7 +6,8 @@ const Navbar = () => {
     return (
       <nav className={Nav.nav}>
         <div className={Nav.item}>
-          <NavLink className={Nav.NavLink} to="/profile/28489">
+          <NavLink className={Nav.NavLink} to="/profile/28489" >
+            
             Profile
           </NavLink>
         </div>
