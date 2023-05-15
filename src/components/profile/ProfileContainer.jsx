@@ -46,14 +46,14 @@ const mapStateToProps = (state) => ({
 function withRouter(Component) {
 
 	function ComponentWithRouterProp(props) {
-		 let location = useLocation();
-		 let navigate = useNavigate();
-		 let params = useParams();
-		 return (
-			  <Component
-					{...props}
-					router={{ location, navigate, params }}
-			  />
+		let location = useLocation();
+		let navigate = useNavigate();
+		let params = useParams();
+		return (
+			<Component
+				{...props}
+				router={{ location, navigate, params }}
+			/>
 		 );
 	}
 
